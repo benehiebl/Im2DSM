@@ -1,0 +1,43 @@
+#########################################################################################################
+### Input Parameters for Im2DSM.py
+### Processing a single channel .asc Image with given Camera Parameters to a DSM
+###
+### this file has to be within the same directory as Im2DSM.py
+#########################################################################################################
+#
+### Working directory (if not location of .py file)
+IN_DIRECTORY	=	C:/Users/beneh/Desktop/DataThermo/ThermoASCII/211026AC
+OUT_DIRECTORY	=	C:/Users/beneh/Desktop/DataThermo/MonoTest/211026AC
+FILE_FORMAT	=	.asc
+#
+### filenames of DSM and Viewshed (has to be format .tif)
+DSM_INPUT	=	C:/Users/beneh/Desktop/DataThermo/DOM_small/small-DOM_05_25832.tif
+VIEWSHED	=	C:/Users/beneh/Desktop/DataThermo/DOM_small/small-viewshed_05.tif
+#
+### if format is .asc define rows to skip (Thermos from VarioCam ASC_SKIP = 17)
+ASC_SKIP	= 	17
+#
+### Camera location coordinates and FOV in degrees (fov in degree = (angle horizontal, angle vertical))
+CAMLOCATION_X	=	657771
+CAMLOCATION_Y	=	5209864
+CAMLOCATION_Z	=	2434
+FOCAL_LENGTH	=	30
+SENSOR_X	=	NA
+SENSOR_Y	=	NA
+FOV_SENSOR_X	=	30
+FOV_SENSOR_Y	=	23
+#
+### Adjustments for Distortion and Angles
+DISTORTION	=	0
+ADJUST_LEFT	=	0
+ADJUST_UP	=	-2.5
+ADJUST_ROLL	=	0
+ROLL_AUTO	= 	False
+#
+### If Camera has INS (set to NA if not)
+ANGLE_UP	=	NA
+ANGLE_LEFT	=	NA
+ANGLE_ROT	=	NA
+#
+### Reference points for camera orientation (Set to NA if INS is available)
+GCP_FILE	=	C:/Users/beneh/Desktop/DataThermo/GCP/GCP_211026AC.csv
