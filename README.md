@@ -14,3 +14,4 @@ Input requirements:
 •	Ground Control Points or precalculated pitch, yaw, roll angles
 
 Define Input in Im2DSM_Parameters.txt
+For further Information see im2dsm_documentation.pdf
