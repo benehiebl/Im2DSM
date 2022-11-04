@@ -1,0 +1,50 @@
+#########################################################################################################
+### Input Parameters for Im2DSM.py
+### Processing a single channel .asc Image with given Camera Parameters to a DSM
+###
+### this file has to be within the same directory as Im2DSM.py
+#########################################################################################################
+#
+### Working directory (if not location of .py file)
+IN_DIRECTORY	=	C:/Users/beneh/Desktop/DataThermo/ExGreen/wannenkogel-2021-10-27
+OUT_DIRECTORY	=	C:/Users/beneh/Desktop/DataThermo/MonoTest
+FILE_FORMAT	=	.tif
+#
+### filenames of DSM and Viewshed (has to be format .tif)
+DSM_INPUT	=	C:/Users/beneh/Desktop/DataThermo/DOM_small/small-DOM_05_25832.tif
+VIEWSHED	=	C:/Users/beneh/Desktop/DataThermo/DOM_small/viewshed_webcam_wannenkogel_05_small.tif
+#
+### if format is .asc define rows to skip (Thermos from VarioCam ASC_SKIP = 17)
+ASC_SKIP	= 	0
+#
+### Camera location coordinates and FOV in degrees (fov in degree = (angle horizontal, angle vertical))
+CAMLOCATION_X	=	657549
+CAMLOCATION_Y	=	5209670
+CAMLOCATION_Z	=	2645
+FOCAL_LENGTH	=	22.0
+SENSOR_X	=	22.8
+SENSOR_Y	=	14.5
+FOV_SENSOR_X	=	NA
+FOV_SENSOR_Y	=	NA
+#
+### Minimum angle between 3 GCPs to avoid near colinearity
+CO_LINEAR	=	30
+#
+### Adjustments for Distortion
+DISTORTION	=	-0.08
+DIST_ZERO	=	1.3
+DIST_MODE	=	SIN_SQRT
+#
+### Adjustements for Euler angles
+ADJUST_LEFT	=	0
+ADJUST_UP	=	0.1
+ADJUST_ROLL	=	-0.6
+#
+### If Camera has INS (set to NA if not)
+ANGLE_UP	=	NA
+ANGLE_LEFT	=	NA
+ANGLE_ROT	=	NA
+#
+### Reference points for camera orientation (Set to NA if INS is available)
+GCP_FILE	=	C:/Users/beneh/Desktop/DataThermo/GCP/GCP_Wannenkogel.csv
+ACCURACY	=	YES
