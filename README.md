@@ -5,6 +5,7 @@ Author: Bene Hiebl
 Date: 11.10.2022
 
 Monoplotting tool for projection of single channel raster images to DSM.
+Using 3 Ground Control Points for Euler Angle Calculation.
 
 Input requirements:
 •	DSM
