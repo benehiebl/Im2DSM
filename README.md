@@ -1,6 +1,6 @@
 # Im2DSM
 
-Version 1.5 
+Version 1.8
 Author: Bene Hiebl
 Date: 11.10.2022
 
